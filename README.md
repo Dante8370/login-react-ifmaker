@@ -42,6 +42,7 @@ A plataforma será utilizada por três tipos de usuários:
 - **React.js** – Interface web moderna e responsiva
 - **CSS Modules / SCSS** – Estilização modular e escalável
 - **React Icons** – Ícones leves e acessíveis
+- **Firebase** - Banco de dados e autenticação
 - **Git + GitHub** – Versionamento de código
 
 ### 🔜 Futuras Integrações
