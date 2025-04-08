@@ -58,7 +58,7 @@ A plataforma será utilizada por três tipos de usuários:
 
 ## 🏗️ Estrutura Inicial do Projeto
 
-```bash
+
 .
 ├── public/
 ├── src/
@@ -71,7 +71,7 @@ A plataforma será utilizada por três tipos de usuários:
 ├── README.md
 └── package.json
 
-🤝 Contribuições
+##🤝 Contribuições
 Contribuições são muito bem-vindas! Se você deseja colaborar com o projeto, siga os passos:
 
 1. Faça um fork
