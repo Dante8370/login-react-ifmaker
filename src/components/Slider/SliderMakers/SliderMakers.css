@@ -1,0 +1,24 @@
+
+
+.item-slider {
+    width: 60%;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.maker {
+    text-align: center;
+    width: 80%;
+    height: 400px;
+    background-color: green;
+    padding: 20px;
+    margin-left: 35px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+

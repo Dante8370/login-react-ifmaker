@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FaUser, FaLock } from 'react-icons/fa';
 
@@ -13,7 +14,7 @@ const FormLogin = ({ email, senha, setEmail, setSenha, handleLogin, handleGoogle
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-      </div>
+      </div>  
       <div className="input-field">
         <FaLock className="icon" />
         <input

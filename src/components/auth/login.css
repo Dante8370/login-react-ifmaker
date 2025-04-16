@@ -19,7 +19,7 @@
   }
 
 .main-container {
-    background-image: url('./imgs/BG.jpg');
+    background-image: url('./imgs/fundo.jpg');
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    overflow-y: auto;
 }
 
 .body{
@@ -50,14 +51,14 @@
 .logo h1 {
     font-family: var(--font-titulos);
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     color: #fff;
     transform: translatex(4%);
 }
 
 .logo .logo-img {
-    height: 120px;
-    width: 100%;
+    height: 100px;
+    width: 90%;
     transform: translatex(4%);
     
 }
@@ -72,7 +73,7 @@
     position: relative;
     width: 100%;
     height: 40px;
-    margin: 5px auto;
+    margin: 10px auto;
     
 }
 .input-field label {
@@ -82,7 +83,7 @@
 
 .input-field input {
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: transparent;
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -179,6 +180,7 @@ select {
     padding: 5px;
     font-size: 16px;
     text-shadow: none;
+    background-color: transparent;
 }
 
 .cadastro-container {
@@ -250,10 +252,16 @@ select {
 
   .input-profissao .checkbox-pro {
     font-family: var(--font-principal);
+    
+  }
+
+  .P-pro{
+    margin-top: 10px;
   }
 
   .checkbox-pro input {
     margin-right: 3px;
+    
   }
 
   .input-pro {
@@ -278,6 +286,78 @@ select {
     font-family: var(--font-principal);
   }
 
+  @media (max-width: 1550px) {
+    .body {
+      width: 40%;
+      padding: 20px;
+    }
+
+    .body .logo {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+  
+    .logo h1 {
+      font-size: 23px;
+    }
+
+    .logo .logo-img {
+      height: 100px;
+      width: 60%;
+    }
+
+    .checkbox-pro{
+      margin-bottom: 10px;
+    }
+  
+    .input-field input {
+       font-size: 14px;
+      padding: 20px 35px;
+      height: 35px;
+      margin-bottom: 3px;
+    }
+    
+    .input-profissao .input-pro,
+    select {
+      font-size: 14px;
+      padding: 10px 35px;
+      height: 35px;
+      margin-bottom: 3px;
+    }
+  
+    .body button,
+    .btn-cadastrar {
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    .recall-forget {
+      font-size: 13px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+    }
+  
+    .cadastro-container {
+      flex-direction: column;
+    }
+  
+    .cadastro-coluna {
+      gap: 8px;
+    }
+  
+    .btn-google {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .signup-link {
+      font-size: 14px;
+    }
+  }
+
   @media (max-width: 860px) {
     .body {
       width: 60%;
@@ -287,6 +367,7 @@ select {
     .body .logo {
       width: 100%;
       height: 50px;
+      padding-bottom: 10px;
     }
   
     .logo h1 {
@@ -294,8 +375,8 @@ select {
     }
 
     .logo .logo-img {
-      height: 100%;
-      width: 100%;
+      height: 60%;
+      width: 35%;
     }
   
     .input-field input,
@@ -353,6 +434,11 @@ select {
     .logo h1 {
       font-size: 18px;
     }
+
+    .logo .logo-img {
+      width: 30%;
+      height: 30px;
+    }
   
     .input-field input,
     .input-profissao .input-pro,
@@ -391,6 +477,139 @@ select {
   
     .signup-link {
       font-size: 14px;
+    }
+  }
+  
+  .btn-google {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 860px) {
+    .body {
+      width: 60%;
+      padding: 20px;
+    }
+
+    .body .logo {
+      width: 100%;
+      height: 50px;
+      padding-bottom: 10px;
+    }
+  
+    .logo h1 {
+      font-size: 28px;
+    }
+
+    .logo .logo-img {
+      height: 60%;
+      width: 35%;
+    }
+  
+    .input-field input,
+    .input-profissao .input-pro,
+    select {
+      font-size: 14px;
+      padding: 15px 35px;
+      height: 35px;
+    }
+  
+    .body button,
+    .btn-cadastrar {
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    .recall-forget {
+      font-size: 13px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+    }
+  
+    .cadastro-container {
+      flex-direction: column;
+    }
+  
+    .cadastro-coluna {
+      gap: 8px;
+    }
+  
+    .btn-google {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .signup-link {
+      font-size: 14px;
+    }
+  }
+  
+  
+  @media (max-width: 468px) {
+    .cadastro-container {
+      flex-direction: column;
+    }
+
+    .body {
+      padding: 20px;
+      width: 80%;
+      height: 70%;
+      border-radius: 20px;
+    }
+  
+    .logo h1 {
+      font-size: 26px;
+    }
+
+    .logo .logo-img {
+      width: 40%;
+      height: 45px;
+    }
+  
+    .input-field input,
+    .input-profissao .input-pro,
+    select {
+      font-size: 12px;
+      padding:20px 30px;
+      height: 30px;
+    }
+  
+    .btn-cadastrar {
+      height: 40px;
+      width: 60%;
+      font-size: 16px;
+    }
+  
+    .recall-forget {
+      font-size: 13px;
+    }
+  
+    .subtitle {
+      font-size: 12px;
+    }
+  
+    .cadastro-container {
+      flex-direction: column;
+    }
+  
+    .cadastro-coluna {
+      gap: 8px;
+    }
+  
+    .btn-google {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .signup-link {
+      font-size: 12px;
     }
   }
   
